@@ -35,9 +35,9 @@ public class Main {
         Worker.initTypeFiles();
 
         while(true) {
-            System.out.println("get");
+            //System.out.println("get");
             Socket socket = ss.accept();
-            System.out.println("2");
+            //System.out.println("2");
             Worker w = new Worker(socket);
             threadPool.execute(w);
         }
